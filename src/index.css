@@ -21,16 +21,15 @@ body {
 .item {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 20px 24px;
+  padding-right: 48px;
+  cursor: pointer;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
-}
-
-.item > .header {
-  cursor: pointer;
 
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
+  row-gap: 32px;
   align-items: center;
 }
 
@@ -44,11 +43,10 @@ body {
 .icon {
   font-size: 24px;
   font-weight: 500;
-  padding: 1rem;
 }
 
 .content-box {
-  padding-top: 16px;
+  grid-column: 2 / -1;
   padding-bottom: 16px;
   line-height: 1.6;
 }
@@ -69,6 +67,6 @@ body {
 }
 
 .open .number,
-.open .text {
+.open .title {
   color: #087f5b;
 }
